@@ -1,4 +1,4 @@
-const PriceRange = require("../model/priceRange"); // Corrected import path
+const PriceRange = require("../model/PriceRange"); // Corrected import path
 
 // Create a new price range
 exports.createPriceRange = async (req, res) => {
