@@ -7,19 +7,15 @@ import { selectCartItems } from "../../store/cart/CartSlice";
 import { CgProfile } from "react-icons/cg";
 import {
   selectLoggedInUser,
-  signOutUserAsync,
 } from "../../store/auth/authSlice";
 import { FaSearch, FaRegHeart } from "react-icons/fa";
-import { FaRegCircleUser } from "react-icons/fa6";
 import { IoCloseCircleOutline } from "react-icons/io5";
 import { useState } from "react";
-// import { set } from "react-hook-form";
 import {
-  fetchProductBySearchQueryAsync,
   fetchProductListByFiltersAsync,
 } from "../../store/productList/productListSlice";
 import { selectUserInfo } from "../../store/user/userSlice";
-import { fetchProductListByFilters } from "../../store/productList/productListAPI";
+import Img from "../img/Img"
 import Modal from "../modal/Modal";
 
 const Header = () => {
@@ -61,7 +57,8 @@ const Header = () => {
           type="warning"
         />
 
-        <div className="sm:w-1/2 navbar-start">
+        <div className="flex items-center sm:w-1/2 navbar-start">
+          <Img src={'/favicon.png'} className={'w-8 rounded'}/>
           <Link
             to="/"
             className="p-2 m-0 text-2xl font-bold normal-case md:mr-2 sm:p-4"

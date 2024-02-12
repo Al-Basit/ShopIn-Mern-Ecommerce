@@ -26,7 +26,7 @@ const Login = () => {
     <>
       {user && <Navigate to="/" replace={true}></Navigate>}
       <ContentWrapper>
-        <div className="flex flex-col items-center justify-center md:h-screen lg:py-0">
+        <div className="flex flex-col items-center justify-center mt-10 md:h-screen lg:py-0">
           <h1 className="mb-3 text-3xl font-bold"> Login</h1>
 
           <div className="w-full rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
@@ -125,7 +125,7 @@ const Login = () => {
                     </label>
                   </div>
                 </div>
-                <button type="submit" className="w-full btn btn-neutral">
+                <button type="submit" className="w-full btn hover:bg-gray-700 btn-neutral">
                   Login
                 </button>
                 <p className="text-sm font-light text-gray-500 dark:text-gray-400">

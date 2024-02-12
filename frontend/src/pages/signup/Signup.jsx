@@ -147,7 +147,7 @@ const Signup = () => {
                   </label>
                 </div>
               </div>
-              <button type="submit" className="w-full btn btn-neutral">
+              <button type="submit" className="w-full btn btn-neutral hover:bg-gray-700">
                 Create an account
               </button>
               <p className="text-sm font-light text-gray-500 dark:text-gray-400">
